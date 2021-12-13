@@ -2,7 +2,7 @@ import style from './Intro.module.scss'
 
 export default function Intro() {
   return (
-    <div className={style.intro}>
+    <div className={style.intro} id='intro'>
     </div>
   )
 }
