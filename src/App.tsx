@@ -1,9 +1,13 @@
-import React from 'react';
+import Intro from './components/Intro/Intro';
+import Topbar from './components/Topbar/Topbar';
 
 function App() {
   return (
     <div className="App">
-      hello
+      <Topbar />
+      <div className="sections">
+        <Intro />
+      </div>
     </div>
   );
 }
