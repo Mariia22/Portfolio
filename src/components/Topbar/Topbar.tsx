@@ -1,8 +1,8 @@
-import './Topbar.scss'
+import style from './Topbar.module.scss'
 
 export default function Topbar() {
   return (
-    <div className='topbar'>
+    <div className={style.topbar}>
 
     </div>
   )

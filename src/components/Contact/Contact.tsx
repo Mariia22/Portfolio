@@ -1,8 +1,8 @@
-import './Contact.scss'
+import style from './Contact.module.scss'
 
 export default function Contact() {
   return (
-    <div className="contact">
+    <div className={style.contact}>
 
     </div>
   )

@@ -1,9 +1,9 @@
-import React from 'react'
+import style from './Works.module.scss'
 
 export default function Works() {
   return (
-    <div className="works">
-      
+    <div className={style.works}>
+
     </div>
   )
 }
