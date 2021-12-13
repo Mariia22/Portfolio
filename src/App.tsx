@@ -12,7 +12,7 @@ function App() {
   return (
     <div className={style.app}>
       <Topbar active={menuOpen} setActive={setMenuOpen} />
-      <Menu active={menuOpen} />
+      <Menu active={menuOpen} setActive={setMenuOpen} />
       <div className={style.sections}>
         <Intro />
         <Portfolio />
