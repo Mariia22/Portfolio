@@ -8,7 +8,7 @@
     .img__container{
       width:680px;
       height: 680px;
-      background-color: beige;
+      background-color: rgb(168, 112, 240,0.1);
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
@@ -43,7 +43,7 @@
         font-size: 30px;
         span{
           font-size: inherit;
-          color: crimson;
+          color: #a870f0;
         }
         .ityped-cursor{
           animation: blink 1s infinite;

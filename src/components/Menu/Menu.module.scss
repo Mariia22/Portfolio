@@ -28,7 +28,7 @@
   justify-content: center;
   transition: all 1s ease;
 }
-ul{
+.menuList{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -37,7 +37,7 @@ ul{
   color: white;
   width: 60%;
 
-  li{
+  .menuItem{
     margin-bottom: 25px;
     width: 100%;
     a{
