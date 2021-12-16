@@ -15,8 +15,8 @@ const Contact: React.FC = () => {
       <div className={style.contact__right}>
         <h2>Contact</h2>
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder='Email' />
-          <textarea placeholder='Message'></textarea>
+          <input type="text" placeholder='Email' required />
+          <textarea placeholder='Message' required></textarea>
           <button type='submit'>Send</button>
           {message && <span>Thanks, I'll reply ASAP;)</span>}
         </form>
