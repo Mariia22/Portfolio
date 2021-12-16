@@ -14,7 +14,7 @@ const Menu: React.FC<Props> = ({ active, setActive }) => {
           <a href='#intro'>Home</a>
         </li>
         <li className={style.menu__item} >
-          <a href='#works'>Portfolio</a>
+          <a href='#portfolio'>Portfolio</a>
         </li>
         <li className={style.menu__item} >
           <a href='#contact'>Contacts</a>
