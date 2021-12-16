@@ -9,10 +9,10 @@ const Contact: React.FC = () => {
   }
   return (
     <div className={style.contact} id='contact'>
-      <div className={style.left}>
+      <div className={style.contact__left}>
         <img src="assets/shake.svg" alt="" />
       </div>
-      <div className={style.right}>
+      <div className={style.contact__right}>
         <h2>Contact</h2>
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder='Email' />

@@ -2,8 +2,8 @@ import { useState } from 'react';
 import Contact from './components/Contact/Contact';
 import Intro from './components/Intro/Intro';
 import Topbar from './components/Topbar/Topbar';
-import Works from './components/Works/Works';
 import Menu from './components/Menu/Menu';
+import Portfolio from './components/Portfolio/Portfolio'
 import style from './App.module.scss';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Menu active={menuOpen} setActive={setMenuOpen} />
       <div className={style.sections}>
         <Intro />
-        <Works />
+        <Portfolio />
         <Contact />
       </div>
     </div>

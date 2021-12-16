@@ -1,8 +1,16 @@
 $mainColor: #15023a;
+$mainBgColor:#6667ab; //pantone 'Very Peri', color of New 2022 Year
 $width: 768px;
+$wideWidth: 1440px;
 
 @mixin mobile{
   @media (max-width: #{$width}){
     @content
   }
-}
+};
+
+@mixin desktop{
+  @media (min-width: #{$wideWidth}){
+    @content
+  }
+};

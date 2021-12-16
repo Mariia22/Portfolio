@@ -9,19 +9,18 @@ const Menu: React.FC<Props> = ({ active, setActive }) => {
   const classNameMenu = active ? style.active : style.menu;
   return (
     <div className={classNameMenu}>
-      <ul className={style.menuList} onClick={() => setActive(false)}>
-        <li className={style.menuItem} >
+      <ul className={style.menu__list} onClick={() => setActive(false)}>
+        <li className={style.menu__item} >
           <a href='#intro'>Home</a>
         </li>
-        <li className={style.menuItem} >
+        <li className={style.menu__item} >
           <a href='#works'>Portfolio</a>
         </li>
-        <li className={style.menuItem} >
+        <li className={style.menu__item} >
           <a href='#contact'>Contacts</a>
         </li>
       </ul>
     </div>
-
   )
 }
 export default Menu;

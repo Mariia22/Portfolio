@@ -1,5 +1,6 @@
+@import './../../variables.scss';
 .works{
-  background-color:  #a870f0;
+  background-color:  $mainBgColor;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,64 +9,99 @@
   .arrowLeft{
     position: absolute;
     height: 50px;
-    left: 100px;
+    left: 30px;
     transform: rotate(180deg);
     cursor: pointer;
+    @include mobile{
+      display: none;
+    };
+    @include desktop{
+      left: 100px;
+    }
   }
   .arrowRight{
     position: absolute;
     height: 50px;
-    right: 100px;
+    right: 30px;
+    @include mobile{
+      display: none;
+    };
+    @include desktop{
+      right: 100px;
+    }
   }
   
-  .slider{
+  .works__slider{
     height: 350px;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
-    .container{
+    @include mobile{
+     height: 100vh;
+     flex-direction: column;
+     justify-content: center;
+    }
+    .works__container{
       width: 100vw;
       display: flex;
       align-items: center;
       justify-content: center;
-      .item{
-        width: 700px;
+      .works__item{
+        width: 600px;
         height: 100%;
         background-color: white;
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+        @include mobile{
+         width: 80%;
+         height: 150px;
+         margin: 15px 0;
+        };
+        @include desktop{
+          width: 700px;
+        }
 
-        .left{
+        .works__left{
           flex: 4;
           height: 80%;
           display: flex;
           align-items: center;
           justify-content: center;
 
-          .leftContainer{
+          .works__leftContainer{
             width: 90%;
             height: 70%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @include mobile{
+              width: 100%;
+              height: 100%;
+            }
             h2{
               font-size: 20px;
             }
             p{
               font-size: 13px;
             }
-            span{
-              font-size: 12px;
+            a{
+              font-size: 15px;
               font-weight: 600;
               text-decoration: underline;
               cursor: pointer;
+              text-decoration: none;
+              color: $mainColor;
+              &:hover,
+              &:active{
+                text-decoration: none;
+              }
             }
           }
         }
-        .right{
+        .works__right{
           flex: 8;
           height: 100%;
           display: flex;
@@ -74,8 +110,8 @@
           overflow: hidden;
 
           img{
-            width: 350px;
-            transform: rotate(-10deg);
+            width: 370px;
+            border-radius: 20px;
           }
         }
       }

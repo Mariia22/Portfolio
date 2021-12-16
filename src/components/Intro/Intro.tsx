@@ -18,13 +18,13 @@ const Intro: React.FC = () => {
   }, []);
   return (
     <div className={style.intro} id='intro'>
-      <div className={style.left}>
-        <div className={style.img__container}>
+      <div className={style.intro__left}>
+        <div className={style.intro__image}>
           <img src="assets/photo.png" alt="Portfolio photo" />
         </div>
       </div>
-      <div className={style.right}>
-        <div className={style.wrapper}>
+      <div className={style.intro__right}>
+        <div className={style.intro__wrapper}>
           <h2>Hi There, I'm</h2>
           <h1>Mariia Ushakova</h1>
           <h3>Freelance

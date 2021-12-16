@@ -7,21 +7,21 @@ const Works: React.FC = () => {
     {
       id: 0,
       title: 'ToDo App',
-      description: 'Application for ...',
+      description: 'The classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering for anyone wanting an extra test',
       img: 'assets/todoSlider.jpg',
       link: 'https://mariia22.github.io/todo-react/'
     },
     {
       id: 1,
       title: 'Window Company',
-      description: 'Application for ...',
+      description: 'First attempt to add Vanilla JS code to a ready-made layout',
       img: 'assets/windowCompany.png',
       link: 'https://mariia22.github.io/todo-react/'
     },
     {
       id: 2,
       title: 'Candy Crash',
-      description: 'JS Game',
+      description: 'My first own React project for my niece. I was inspired by Ania Kubow',
       img: 'assets/candyCrash.png',
       link: 'https://mariia22.github.io/todo-react/'
     }
@@ -34,18 +34,18 @@ const Works: React.FC = () => {
 
   return (
     <div className={style.works} id='works'>
-      <div className={style.slider} style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
+      <div className={style.works__slider} style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
         {data.map(item => (
-          <div className={style.container} key={item.id}>
-            <div className={style.item}>
-              <div className={style.left}>
-                <div className={style.leftContainer}>
+          <div className={style.works__container} key={item.id}>
+            <div className={style.works__item}>
+              <div className={style.works__left}>
+                <div className={style.works__leftContainer}>
                   <h2>{item.title}</h2>
                   <p>{item.description}</p>
-                  <span>Projects</span>
+                  <a href={item.link}>Link</a>
                 </div>
               </div>
-              <div className={style.right}>
+              <div className={style.works__right}>
                 <img alt='Todo App' src={item.img} />
               </div>
             </div>

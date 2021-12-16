@@ -1,7 +1,11 @@
+@import './../../variables.scss';
 .contact{
   background-color: white;
   display: flex;
-  .left{
+  @include mobile{
+    flex-direction: column;
+  }
+  .contact__left{
     flex: 1;
     overflow: hidden;
 
@@ -9,7 +13,7 @@
       height: 100%;
     }
   }
-  .right{
+  .contact__right{
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -29,20 +33,28 @@
       justify-content: space-around;
 
       input{
-        width: 300px;
+        width: 260px;
         height: 30px;
         font-size: 14px;
+        @include mobile{
+          width:200px;
+          height:20px
+        }
       }
       textarea{
-        width: 300px;
+        width: 260px;
         height: 200px;
         font-size: 14px;
+        @include mobile{
+          width:200px;
+          height: 100px;
+        }
       }
       button{
         width: 150px;
         height: 30px;
         color: white;
-        background-color: #a870f0;
+        background-color: $mainBgColor;
         border: none;
         border-radius: 10px;
         font-weight: 500;
