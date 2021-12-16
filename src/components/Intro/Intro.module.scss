@@ -1,6 +1,13 @@
+@import './../../variables.scss';
+
 .intro{
   background-color: white;
   display: flex;
+
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
   .left{
     flex:0.5;
     overflow: hidden;
@@ -15,9 +22,15 @@
       justify-content: center;
       float:right;
       margin-top: 10px;
+      @include mobile{
+        align-items: flex-start;
+      }
 
       img{
         height: 120%;
+        @include mobile{
+          height: 50%;
+        }
       }
     }
   }

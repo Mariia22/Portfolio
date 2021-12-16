@@ -14,13 +14,10 @@ const Menu: React.FC<Props> = ({ active, setActive }) => {
           <a href='#intro'>Home</a>
         </li>
         <li className={style.menuItem} >
-          <a href='#portfolio'>Portfolio</a>
+          <a href='#works'>Portfolio</a>
         </li>
         <li className={style.menuItem} >
-          <a href='#works'>Works</a>
-        </li>
-        <li className={style.menuItem} >
-          <a href='#contacts'>Contacts</a>
+          <a href='#contact'>Contacts</a>
         </li>
       </ul>
     </div>
